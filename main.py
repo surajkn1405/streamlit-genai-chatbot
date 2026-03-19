@@ -1,9 +1,12 @@
-from  dotenv import load_dotenv
+# from  dotenv import load_dotenv
+import os
 import streamlit as st
 from langchain_groq import ChatGroq
 
 #load env variable
-load_dotenv()
+# load_dotenv()
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # streamlit page setup
 st.set_page_config(
